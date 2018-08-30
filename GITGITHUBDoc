@@ -113,3 +113,19 @@ TWO TYPES OF REPOSITORY
 	git log
 	copy first 8 hexadecimal number
 	git checkout 8 hexadecimal revert.txt	
+// pushing forcefully
+	git push --force origin master
+
+git fetch origin master
+git merge origin master
+After to wrote this code I received other error: (non-fast-forward)
+
+I write this code:
+
+git fetch origin master:tmp
+git rebase tmp
+git push origin HEAD:master
+git branch -D tmp
+And resolved my problem
+
+
