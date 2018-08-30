@@ -1,0 +1,115 @@
+
+	
+	GIT AND GITHUB
+why we use git 
+	->collaboration
+	->storing version
+	->backups
+	-> analysis
+Features of GIT
+	->Distributed
+	->compatible
+
+VERSION CONTROL SYSTEM
+	1.> DISTRIBUTED
+	2.> CENTRALISED
+	3.> NON-LINEAR(GIT STORE CURRENT VERSIONS AS A TREE-GRAPH)
+	4.> LIGHTWEIGHT
+	5.> SPEED
+	6.> OPEN SOURCE
+	7.> RELIABLE
+	8.> SECURE
+	9.> ECONOMICS
+TWO TYPES OF REPOSITORY
+	-> LOCAL REPO(on locally )
+	-> CENTRAL REPO (on github)
+
+--------------------------------
+
+	*host central repo on github by creating github account
+	*for local repo install git on localstorage
+================================
+	// this is for initialising Repository in your local machine
+	git init {initialising repo, to create local repository}
+	git clone {download or clone your repo from Github}
+	//now linking to remote repository or connecting local and central repository
+		git add origin <link>
+	//pulling files from central to local repository
+		git pull `origin master`
+	//push your own changes into the central repository
+		git push
+	git remote add origin "https://github.com/BuildBeautiful4all/github-demo.git" {connect git and github}
+	git pull 
+	git push
+	git status {tell which files are added to index and are ready to commit}
+	git add <filename> {lets you add files to your index}
+*when you make changes into your local repo then you have to add these files into index first
+	git commit {after do imediate above two cmds,it records snapshot of the repo at current time, and committed snapshots will never changes unless done explicitly}
+	git commit -m ""
+
+
++++++++++++++++++++++++++++++++++++
+	*** untracked files are those which are not adding in index yet
+	*** n modified file shows no. of modified files 
+	*** n insertion (+): this shows n no. of files are added into your local repository 
+		git has an intermediate layer that resides between your workspace and localRepo, now when you want to commit changes in your local repository you have to add files into index
+		    first
+			'git add' {add files into localRepo} and if you want to see which file is in localRepo and which one is in workspace then you can see by 'git status'
+		    and after that you can commit these changes into localRepo
+		what exactly 'git commit', lets say A<-B<--(Master*) this is your initial project with not changes occured till now, so commit is like a object which is actually version 
+			of your project, lets say you made some changes in project and you commited those changes , so what your version control system do as it will create another version 
+			object and this will going to your different version with the changes, so your commit snapshot actually contains your project snapshots which are actually changes
+ 
+	*** git add -A (add all files (modified and trackeds files) into index)
+	*** git commit -a -m "message" (commit all files into localRepo at ones)
+	*** how git stores these localRepo files 
+		'git log'
+
+------------------------------------
+//PARALLEL DEVELOPMENT OR NON LINEAR DEVELOPMENT
+	1.> BRANCHING: (these are the pointers to a specific commit)
+		two types:
+			LOCAL BRANCHES
+			REMOTE-TRACKING-BRANCHES
+	*Master(Main) branch which contain all of your code, and if you want to add new feature in it without wanting  to interfair your master branch then you actually create branch
+	
+	*** `git branch firstBranch(this branch contain all files that were in master because it originated from master)`
+	*** now switching from one branch to another `git checkout "destinationBranchName"`
+	
+	2.> MERGING():(it is the way to combining the work of different branches together, it allows to branch off, develop a new feature and combine it in)
+		-----------------------------------------------------------------------------------------------------------------
+		    	r---(c2)<-master*						   r----(c2)---T	
+		(c1)---<			--- git merge branch --> 	(c1)------<		----(c4)<-master*
+			L---(c3)<-branch					           L----(c3)---I<-branch
+		-----------------------------------------------------------------------------------------------------------------		
+		now remember always checkout into your destination branch first then merge 
+			eg.> firstBranch merge into master so firstly checkout into your master branch and then merge it out. 
+			git merge <fileNameWhichYouWantToMerge>  
+			git merge firstBranch
+		**** git commit -a -m "modifing edu4"
+			now git commit is also performed another purpose, it doesn't only actually commit all the uncommited files at once if your files are in index and he has just modified
+			it also does the job of adding it to the index again by modifing it and then commiting it but it wouldn't work if you have never added that file into index 
+
+	3.> REBASING:(this is also the way to combining the work between two branches, it can be used to make a linear sequence of commits)
+		*** much clean project history, reduce branches
+		-----------------------------------------------------------------------------------------------------------------
+		    	r---(c2)<-master*						   T	
+		(c1)---<			--- git merge master --> 	(c1)------<----(c2)<----(c3)<--(c4)<-newbranch*
+			L---(c3)<-branch					           		  L<----master
+		-----------------------------------------------------------------------------------------------------------------		
+	******* DIFFERENCE BETWEEN FETCH VS PULL
+			git fetch + git merge = git pull
+
+// PUSHING NEEDS CERTAIN ACCESS BECAUSE YOU DONT WANT OTHER PERSONS PUSH WRONG CODE IN MY REPOSITORY
+	In order to connect you with your central repositroy need SSH, in order to connect SSH you need to generate public SSH key
+		**** ssh-keygen
+	want to see cat urlPath
+	
+	now check: ssh -T git@github.com
+	
+	now push: git push <remoteName> <branchName> eg.> git push origin firstBranch  
+
+//REVERT BACK 
+	git log
+	copy first 8 hexadecimal number
+	git checkout 8 hexadecimal revert.txt	
