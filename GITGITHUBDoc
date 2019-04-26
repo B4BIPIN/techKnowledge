@@ -33,7 +33,7 @@ TWO TYPES OF REPOSITORY
 	git init {initialising repo, to create local repository}
 	git clone {download or clone your repo from Github}
 	//now linking to remote repository or connecting local and central repository
-		git add origin <link>
+		git remote add <name> <link>
 	//pulling files from central to local repository
 		git pull `origin master`
 	//push your own changes into the central repository
