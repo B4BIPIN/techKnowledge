@@ -1,0 +1,54 @@
+connect(mapStateToProps,mapDispatchToProps)(myComponent);
+
+1.myComponent(){}
+2.mapStateToProps(state){
+return {//object}
+}
+mapStateToProps ===>>> createStructuredSelector({name:getName,email:getEmail})
+
+
+3.mapDispatchToProps(dispatch){
+	return{	onNameChanged:(name)=>dispatch({type: 'Name_CHANGED',payLoad:name}),
+		onEmailChanged:(email)=>dispatch({ type: 'EMAIL_CHANGED', payload: email })
+		}
+}
+---------------------------------------------------------------------------
+		DIPATCH IS A FUNCTION
+	  function dispatch(action) {
+    if (!isPlainObject(action)) {
+      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+    }
+
+    if (typeof action.type === 'undefined') {
+      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+    }
+
+    if (isDispatching) {
+      throw new Error('Reducers may not dispatch actions.');
+    }
+
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+
+    var listeners = currentListeners = nextListeners;
+    for (var i = 0; i < listeners.length; i++) {
+      var listener = listeners[i];
+      listener();
+    }
+
+    return action;
+  }
+--------------------------------------------------------------------------
+ mapDispatchToProps =====>>> {onEmailChanged,onNameChanged}
+
+
+
+
+Selectors to grab our data out of reducers.
+Reselect to combine our selectors into a single selector.
+This single selector can be used directly in mapStateToProps.
+Action creators and mapDispatchToProps shorthand.

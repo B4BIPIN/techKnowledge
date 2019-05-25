@@ -1,0 +1,75 @@
+"w-100"
+ col-{breakpoint}-auto 
+ justify-content-md-center
+align-items-start
+align-self-start
+justify-content-start/center/end/around/between
+
+The gutters between columns in our predefined grid classes can be removed with .no-gutters. This removes the negative margins from .row and the horizontal padding from all immediate children columns.
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+<div class="w-100 d-none d-md-block"></div>
+
+ .order-1.order-md-2
+
+ <div class="col order-12">
+      Second, but last
+    </div>
+
+order-last
+
+You can offset grid columns in two ways: our responsive .offset- grid classes and our margin utilities
+
+bootstrap 4
+ 5tier .col-xl-@,lg,md,.col-sm-@,.col-@
+	ml-md-auto ml/mr-auto
+
+
+
+
+
+
+
+Spacing Bootstrap
+
+The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+		Where property is one of:
+PROPERTIES
+    m - for classes that set margin
+    p - for classes that set padding
+
+SIDES:
+
+    t - for classes that set margin-top or padding-top
+    b - for classes that set margin-bottom or padding-bottom
+    l - for classes that set margin-left or padding-left
+    r - for classes that set margin-right or padding-right
+    x - for classes that set both *-left and *-right
+    y - for classes that set both *-top and *-bottom
+    blank - for classes that set a margin or padding on all 4 sides of the element
+
+
+
+BREAKPOINTS: xl,lg,md,sm,xs
+
+SIZES:
+
+
+    0 - for classes that eliminate the margin or padding by setting it to 0
+    1 - (by default) for classes that set the margin or padding to $spacer * .25
+    2 - (by default) for classes that set the margin or padding to $spacer * .5
+    3 - (by default) for classes that set the margin or padding to $spacer
+    4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+    5 - (by default) for classes that set the margin or padding to $spacer * 3
+    auto - for classes that set the margin to auto
+
+
+

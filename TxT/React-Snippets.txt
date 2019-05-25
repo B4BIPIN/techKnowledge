@@ -1,0 +1,108 @@
+// imp
+import moduleName from 'module';
+// imn
+import 'module';
+// imd
+import {  } from 'module';
+// ime
+import * as alias from 'module';
+// ima
+import { originalName as alias } from 'module';
+___________________________________________________________
+// emf
+export const functionName = (params) =>  {
+    
+};
+// edf
+export default (params) =>  {
+    
+};
+// ecl
+export default class className {
+    
+};
+// ece
+export default class className extends baseclassName {
+    
+};
+++++++++++++++++++++++++++++++++++++++++++++++
+// con
+constructor(params) {
+    
+}
+// met
+methodName(params) {
+    
+}
+// pge
+get propertyName() {
+    return this.;
+}
+// pse
+set propertyName(value) {
+    ;
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+array.forEach(currentItem => {
+    
+});
+// fof
+for (const item of object) {
+    
+}
+// fin
+for (const item in object) {
+    
+}
+?????????????????????????????????????????????????????????????
+// anfn
+(params) => {
+    
+}
+// nfn
+const name = (params) => {
+    
+}
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+// dob
+const {propertyName} = objectToDestruct;
+// dar
+const [propertyName] = arrayToDestruct;
+// sti
+setInterval(() => {
+    
+}, intervalInms);
+// sto
+setTimeout(() => {
+    
+}, delayInms);
+//////////////////////////////////////////////////////////////////////////
+// prom 
+return new Promise((resolve, reject) => {
+    
+});
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+// cas
+console.assert(expression, object);
+// ccl
+console.clear();
+// cco
+console.count(label);
+// cdi
+console.dir(object);
+// cer
+console.error(object);
+// cgr
+console.group("label");
+// cge
+console.groupEnd();
+// clg
+console.log(object);
+// ctr
+console.trace(object);
+// cwa
+console.warn(object);
+// cin
+console.info(object);
+// clt
+console.table(object);

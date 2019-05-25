@@ -1,0 +1,108 @@
+[10:22 AM, 8/2/2018] 😴: WC V1 products /pattributes/category/tags/coupon/order/shipping classes/ with variations
+PRODUCTSATTRIBUTES
+same as WC V2
+PRODUCTS CATEGORY same as WC V2
+TAGS same as WC V2 
+PRODUCTS same as WC v2
+
+
+WC/V2 , coupon/customer/order/products attributes/category/tags /products/settings /shipping zone/taxes / shipping method  number variations
+Coupons null
+Customer
+Orders
+Products ATTRIBUTES paCategory
+     PaColor PaDesign PaFabric paFit paGeneral paNeck paSizes pasleeve 
+PaSortBy
+CATEGORIES accessories hoodies Tshirts uncategorised polo women
+TAGS 3/4thSleeve alloverprinted black blue chest.printed cream fleece grey Hoodies l
+PRODUCTS walletTopup minimalPandaRoundNeck34thSleeveTShirt darkMickeyRound polo vneckTshirt Tshirt longSleeveTee hoodies hoodiesWithZipper hoodiesWithPocket
+
+
+
+
+
+WP V2 , posts/pages/media/product/type/tags/settings no
+Featured media
+POSTS blank
+PAGES campaignApp523 fanbookTestinimialReviews521 blog519 theFactoryOutlet516DelightsCouponsDiscountOffersSale officialMerchandiseCollection513 menFlipFlops509 menFullSleeveTShirts507 theFactoryOutlet504 mobileCovers494 designOfTheDay488 
+MEDIA 386 350†215 
+323 350*215
+239 450*300
+238 350*250
+97 1400*600
+64  hoodiesImages
+63 tshirtsImages
+62 accessories Images
+61 heroImages
+60 neckTeeImages
+PRODUCT 449 minimalPandaRoundNeck34thSleeveTShirt 432 darkMickeyRound 329POLO 80VneckTee 79Tshirts
+77longSleeveTShirt 76hoodies 75hoodiesWithZipper 74hoodiesWithPockets 73HoodiesWithLogo 
+TYPES post page attachment product
+[10:22 AM, 8/2/2018] 😴: WC V2 products tag
+98 3/4 the sleeve
+79 alll over p printed
+69 black
+70 blue
+78 chest printed
+84 cream
+74 fleece
+71 grey
+85 hoodies
+93 l
+[10:23 AM, 8/2/2018] 😴: WP/ V2 media
+386 350*215
+323 350*400
+239. 450*300
+238 350*250
+97 1400*600
+64 hoodies-images
+63 t shirt images
+62 accessories images
+61 hero images
+60 v-neck t shirts
+[10:23 AM, 8/2/2018] 😴: WP/V2 posts
+523 campaign apps
+521 fanbook testimonial review
+519 blog
+516 delights coupon discount os
+513 official marchandise coll.
+509 men flip-flops
+507 men full sleeve t shirts
+504 the factory outlet
+494 mobile cover 2
+488 design of the day
+[10:23 AM, 8/2/2018] 😴: WC / V1
+
+1. 463 wallet top-up 
+.2. 449 minimal panda round neck                    3/4 sleeve t shirt 9 variations 450/451/452/453/454/455/456/457/458 fm 239
+.3. 432 dark Mickey round 3/4 sleeve t-shirt DL  9 variations 433-441 FM 239
+.4. 329 polo 5 variations 330-334
+.5. 80 v-neck t shirts 7 variation s 313-319 fm 323
+.6.  79 tshirt 5 variations. 324-328 fm 323
+.7. 76 hoodies 8 variations 360-368 fm 323
+.8.  77 long sleeve tee 24 variations 336-359 fm 323
+.9. 74 hoodies with pocket 3 variations 377-379 fm 323
+.10. 75 hoodies with zipper 4 variations 373-376 fm 323
+
+
+
+
+Id 73 hoodies with logo 323
+[10:24 AM, 8/2/2018] 😴: Routes
+Men
+Women
+Shop
+Moneysaver
+Mobile covers in India
+Wishlist
+My account
+Cart
+Women new arrival collection
+Men ........
+Design of the day
+Mobile cover online
+Men full sleeve t shirts
+Men flip flops 
+Official merchandise collection
+The factory outlet
+Delights coupon discount offers sal.         ROUTES
