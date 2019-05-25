@@ -1,0 +1,32 @@
+	
+	CHROME CONSOLE
+	
+1.> console.log();
+2.> console.error();
+3.> console.warn();
+4.> console.info();
+5.> console.group();[alt. console.groupCollapsed()]
+	this method is allow to group a series of console.logs(but also errors and so on ) under a group that can be collapsed.
+	//here comes all console.logs();
+    console.groupEnd();
+6.> console.table();
+	eg., console.table(objectName,[Heading1,Heading2]);
+	
+7.> console.count(); {it counts and outputs the number of times that count() has been invoked on the same line and with the same label}
+8.> console.time(); {it starts a timer with a name specified as an input parameter and can run upto 10 min}
+9.> console.timeEnd(); {ones console.time is initialise, we use a call to console.timeEnd() to stop the timer and print the  elapsed time to the console}
+	eg.> console.time and console.timeEnd has same parameter ie, console.time("total") and console.timeEnd('total'); result will be total:timeInMS
+		console.count(_type+'added'); result evenadded:1/oddadded:1 and so on 
+
+10.> console.assert(); and console.trace(); {these methods simply print a stack trace from the point where it was called. Imagine you created JS library and want to inform user where the error 	was generated}
+	console.assert(condition,msg) -----> conditional logs, log something when condition is falsy
+	console.assert is same as console.trace but it(console.assert) will print only if the condition passed didnt pass.
+11.> console.memory {this is property not a function}
+12.> console.profile("profileName"); and console.profileEnd("profileName"); in between these you can start browser performance tools 
+13.> strings substitutions: When logging, you can incorporate variables using string substitutions. These references should be types (%s = string, %i = integer, %O = object, %f = float, %o = 																		DOM element,%c = CSS).
+	eg. console.log("Hello", %s."Your number is %i.","Bipin",18); result--> Hello Bipin. Your number is 18.
+14.> console.clear(); {for clear your logs}
+15.> console.dir(ObjectName); {this will gives the lists of property of ObjectName }
+	eg.> console.dir(document.body);
+
+	eg.> %c console.log("%c My %s name is %s and she is %i years old","color:grey; background-color:lightgrey; font-size:16px","CAT","MEYUNo",8);
