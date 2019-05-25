@@ -1,0 +1,8 @@
+1. Kill the zombie process
+	kill $(ps -A -ostat,ppid | awk '/[zZ]/ && !a[$2]++ {print $2}')
+2. check maximum processes limit in mymachine
+	sysctl kernel.pid_max 
+	 ulimit -a
+  Also you can increase temperary these processes 
+	username  - nproc 500000
+ eg. username= hadoop

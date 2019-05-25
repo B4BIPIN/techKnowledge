@@ -1,0 +1,4 @@
+-->npm install =g ungit
+-->if your system requires root access to install global npm packages, make sure you use the -H flag:--> sudo -H npm install -g ungit
+
+

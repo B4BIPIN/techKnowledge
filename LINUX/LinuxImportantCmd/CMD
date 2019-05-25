@@ -1,0 +1,12 @@
+1.rev <>
+reverse your string
+2.factor <>
+give all possible factors of a number
+3. script ->for i in {1..12}; do for j in $(seq 1 $i); do echo -ne $iÃ—$j=$((i*j))\\t;done; echo;done
+cant understand
+4.url -u YourUsername:YourPassword -d status="Your status message" http://twitter.com/statuses/update.xml
+update your twitter status
+5.speedtest-cli
+for testing internet speed
+6.su
+switch user

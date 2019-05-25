@@ -1,0 +1,25 @@
+1. sl/LS(apt-get install sl)
+moving train
+2.telnet towel.blinkenlights.nl
+show
+3.fortune
+give random fortune
+3.cowsay/cowthink<>(apt-get install cowsay)    -- 
+a cow appear and give what u type               |_____>also done with fortune 
+4.xcowsay/xcowthink<>                           |
+same as above but give colored message         -- 
+5.yes<I LOVE YOU>
+infinte output
+6.toilet<>/figlet<>(apt-get install toilet) also do [toilet -f mono12 -F metal <>]
+stye your input with commands 
+7.cmatrix(apt-get cmatrix)
+give pattern with up to down
+8.oneko()
+a cat move with your mouse courser
+9.while->while true; do echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1; done
+display date and time in infinte way
+10.espeak <>
+speak your computer
+11.aafire(apt-get install libaa-bin)
+output is fire appear with command
+12.
